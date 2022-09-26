@@ -1,94 +1,106 @@
-h1{
-    color: rgb(23, 125, 125);
-    text-align: center;
-}
 .hidden{
     display: none;
 }
+#greeting{
+    text-align: center;
+}
 #userChange{
     position: absolute;
-    top: 32px;
-    left: 1000px;
+    margin-left: 88%;
+    top: 40px;
+    border: solid 3px black;
+    border-radius: 15px;
     padding: 2px;
-    background-color: azure;
-    color: brown;
-    border: 1px solid aqua;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px grey;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
 }
 #nameInput{
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%);
 }
 #nameValue{
+    border-bottom: solid 3px black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgba(0, 0, 0, 0);
     width: 200px;
-    height: 30px;
-    background-color: azure;
-    border: 0;
-    border-radius: 30px;
-    outline: none;  
-    text-align: center;
-    box-shadow: 3px 3px 3px grey;
+    height: 25px;
+    outline: none;
+}
+#nameValue::backdrop{
+    display: none;
 }
 #nameButton{
-    position: relative;
-    left: 30px;
-    outline: none;
-    background-color: azure;
-    outline: none;
-    border-radius: 30px;
-    border: 0;
-    width: 50px;
-    height: 30px;
-    box-shadow: 3px 3px 3px grey;
+    border-bottom: solid 3px black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 32px;
+    font-weight: bold;
 }
 #time{
     position: absolute;
-    left: 100px;
+    left: 7%;
+    top: 2%;
 }
-#quote{
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    color: aliceblue;
-    font-size: 20px;
-    
-}
+
 #todo-form{
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+   
+   position: fixed;
+   top: 35%;
+   left: 50%;
+   transform: translate( -50%, -50%);
+   
 }
 #todoValue{
-    position: sticky;
-    width: 300px;
-    height: 30px;
-    background-color: azure;
-    border: 0;
-    border-radius: 10px;
-    outline: none;
     text-align: center;
-    box-shadow: 3px 3px 3px grey;
-}
-#todoButton{
-    position: relative;
-    left: 30px;
+    border-bottom: solid 3px black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgba(0, 0, 0, 0);
     outline: none;
-    background-color: azure;
-    outline: none;
-    border-radius: 10px;
-    border: 0;
-    width: 50px;
-    height: 30px;
-    box-shadow: 3px 3px 3px grey;
+    color: black;
+    font-weight: bold;
+    width: 300px;
 }
-li{
+
+#todoValue::placeholder{
     color: black;
 }
 .delete{
-    position: absolute;
-    left: 75%;
-    background-color: aquamarine;
-    border: 0;
+    position: fixed;
+    right: -10px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+#todoButton{
+    border-bottom: solid 3px black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+}
+#todoList{
+    position: fixed;
+}
+#todoList li{
+    border-bottom: solid 1px black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgba(51, 2, 2, 0);
+}
+#quote{
+    text-align: center;
+    margin-top: 450px;
+    font-weight: bold;
 }
